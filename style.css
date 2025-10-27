@@ -1,0 +1,461 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("./images/22001.jpg");
+	/* font-family: Roboto, sans-serif; */
+
+	background-size: 100vw 100vh;
+	overflow: hidden;
+	color: #f1f1f1;
+}
+
+.portfolio-header__name {
+	font-size: 2rem;
+	flex-grow: 1;
+	letter-spacing: 0.5rem;
+
+	margin-left: 100px;
+}
+.portfolio-header__nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 100px;
+}
+.portfolio-header__nav a {
+	font-family: Roboto, sans-serif;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #f1f1f1;
+	margin-right: 130px;
+}
+
+.portfolio-container {
+	font-family: Roboto, sans-serif;
+	margin-top: 100px;
+	position: relative;
+	transform: translateX(100%);
+}
+.portfolio-container__title {
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+.portfolio-container__subtitle {
+	margin-bottom: 30px;
+}
+
+.portfolio-container__text {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	line-height: 1.4;
+}
+
+.home-smiley {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.window-about__description {
+	color: #f1f1f1;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	margin-top: 10px;
+}
+
+.window-about__description p {
+	margin-bottom: 10px;
+}
+
+.window-about__image-possum {
+	width: 125px;
+	height: 125px;
+	float: left;
+	border-radius: 50%;
+	object-fit: cover;
+	shape-outside: margin-box;
+	margin: 0 10px 2px 0;
+}
+
+.slider {
+	max-width: 600px;
+	height: 400px;
+	margin: 120px auto 0;
+	position: relative;
+	box-shadow: 0 0 15px rgba(241, 240, 240, 0.6);
+}
+
+.slide-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.4s ease-out;
+}
+
+.slide-image.active {
+	opacity: 1;
+}
+
+.control-btn {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #3d3d3d80;
+	cursor: pointer;
+}
+
+.control-btn img {
+	width: 50%;
+	pointer-events: none;
+}
+
+.previous-btn,
+.next-btn {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.previous-btn {
+	left: 5px;
+}
+
+.next-btn {
+	right: 5px;
+}
+
+.js-home-card-about {
+	position: absolute;
+
+	max-width: 900px;
+	margin: 0 auto;
+	/* Position initiale à droite */
+	transition: transform 0.5s ease-in-out; /* Animation de glissement */
+}
+.js-home-card-resume {
+	position: absolute;
+	max-width: 900px;
+	margin: 0 auto;
+	/* Position initiale à droite */
+	transition: transform 0.5s ease-in-out; /* Animation de glissement */
+}
+.js-home-card-gallery {
+	position: absolute;
+	width: 100%;
+
+	max-width: 900px;
+	margin: 0 auto;
+
+	/* Position initiale à droite */
+	transition: transform 0.5s ease-in-out; /* Animation de glissement */
+}
+.js-home-card-certificats {
+	position: absolute;
+
+	/* Position initiale à droite */
+	transition: transform 0.5s ease-in-out; /* Animation de glissement */
+}
+.portfolio-container__certificats {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
+	gap: 10px;
+}
+
+.portfolio-container__photo {
+	width: 400px;
+	border-radius: 5px;
+}
+
+@media (max-width: 320px) {
+	body {
+		background-size: initial;
+		background-position: center;
+		overflow: hidden;
+	}
+	.portfolio-header__nav {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.portfolio-header__nav a {
+		margin-right: 20px;
+	}
+	.portfolio-header__name {
+		margin-bottom: 20px;
+	}
+	.portfolio-container__title {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.portfolio-container__subtitle {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.portfolio-container__status {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.js-home-card-about {
+		height: auto;
+		left: 6%;
+	}
+
+	.window-about__description {
+		font-size: 0.9rem;
+	}
+	.window-about__image-possum {
+		width: 100px;
+		height: 100px;
+	}
+	.window-about__description h1 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	.window-about__description h2 {
+		font-size: 0.9rem;
+		margin-bottom: 5px;
+	}
+	.js-home-card-resume {
+		left: 6%;
+	}
+
+	.portfolio-container__gallery {
+		max-width: 300px;
+	}
+	.js-home-card-gallery {
+		left: 6%;
+	}
+
+	.portfolio-container__certificats {
+		grid-template-columns: 300px;
+	}
+	.portfolio-container__photo {
+		width: 300px;
+	}
+	.js-home-card-certificats {
+		left: 6.7%;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+	body {
+		background-size: initial;
+		background-position: center;
+		overflow: hidden;
+	}
+	.portfolio-header__nav {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.portfolio-header__nav a {
+		margin-right: 20px;
+	}
+	.portfolio-header__name {
+		text-align: center;
+		margin-bottom: 20px;
+		margin-left: 40%;
+		margin-right: 40%;
+	}
+
+	.portfolio-container__title {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.portfolio-container__subtitle {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.portfolio-container__status {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.js-home-card-about {
+		height: auto;
+		left: 6%;
+	}
+	.window-about__description {
+		font-size: 0.9rem;
+	}
+	.window-about__image-possum {
+		width: 100px;
+		height: 100px;
+	}
+	.window-about__description h1 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	.window-about__description h2 {
+		font-size: 0.9rem;
+		margin-bottom: 5px;
+	}
+	.js-home-card-resume {
+		left: 6%;
+	}
+
+	.portfolio-container__gallery {
+		max-width: 300px;
+	}
+	.js-home-card-gallery {
+		transform: translateX(24%);
+	}
+
+	.portfolio-container__certificats {
+		grid-template-columns: 300px;
+	}
+	.portfolio-container__photo {
+		width: 300px;
+	}
+	.js-home-card-certificats {
+		transform: translateX(23%);
+	}
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+	body {
+		background-size: initial;
+		background-position: center;
+		overflow: hidden;
+	}
+	.portfolio-header__nav {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.portfolio-header__nav a {
+		margin-right: 20px;
+	}
+	.portfolio-header__name {
+		text-align: center;
+		margin-bottom: 20px;
+		margin-left: 40%;
+		margin-right: 40%;
+	}
+
+	.portfolio-container__title {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.portfolio-container__subtitle {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.portfolio-container__status {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.js-home-card-about {
+		left: 7%;
+	}
+	.js-home-card-resume {
+		left: 7%;
+	}
+	.js-home-card-certificats {
+		left: 6%;
+	}
+	.js-home-card-gallery {
+		left: 13.5%;
+	}
+	.portfolio-container__certificats {
+		grid-template-columns: 370px;
+	}
+	.portfolio-container__photo {
+		width: 370px;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+	body {
+		background-size: initial;
+		background-position: center;
+		overflow: hidden;
+	}
+	.portfolio-header__nav {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.portfolio-header__nav a {
+		margin-right: 20px;
+	}
+	.portfolio-header__name {
+		margin-left: 80px;
+	}
+	.portfolio-container__photo {
+		width: 240px;
+	}
+	.portfolio-container__certificats {
+		grid-template-columns: repeat(3, 240px);
+	}
+	.js-home-card-certificats {
+		left: 10.5%;
+	}
+	.js-home-card-about {
+		left: 7%;
+	}
+	.js-home-card-resume {
+		left: 7%;
+	}
+	.js-home-card-gallery {
+		left: 12.5%;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	body {
+		background-size: initial;
+		background-position: center;
+		overflow: hidden;
+	}
+	.portfolio-header__nav {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.portfolio-header__nav a {
+		margin-right: 30px;
+	}
+
+	.portfolio-container__certificats {
+		grid-template-columns: repeat(3, 300px);
+	}
+	.portfolio-container__photo {
+		width: 300px;
+	}
+	.js-home-card-certificats {
+		left: 4%;
+	}
+	.js-home-card-gallery {
+		left: 2%;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	body {
+		background-size: initial;
+		background-position: center;
+		overflow: hidden;
+	}
+	.portfolio-header__nav a {
+		margin-right: 50px;
+	}
+
+	.js-home-card-certificats {
+		left: 5.5%;
+	}
+}
+
+@media (min-width: 1441px) {
+	body {
+		background-size: initial;
+		background-position: center;
+		overflow: hidden;
+	}
+}
