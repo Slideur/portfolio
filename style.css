@@ -452,7 +452,7 @@ body {
 	}
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1441px) and (max-width: 2560px) {
 	body {
 		background-size: initial;
 		background-position: center;
