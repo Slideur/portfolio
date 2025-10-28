@@ -492,7 +492,7 @@ body {
 } */
 
 @media (max-width: 1350px) {
-	.por .portfolio-header__nav a {
+	.portfolio-header__nav a {
 		font-family: Roboto, sans-serif;
 		text-decoration: none;
 		font-size: 1.2rem;
@@ -509,6 +509,9 @@ body {
 }
 
 @media (max-width: 1050px) {
+	.portfolio-header__nav a {
+		margin-right: 20px;
+	}
 	.portfolio-container__home-card {
 		max-width: 600px;
 	}
@@ -614,6 +617,9 @@ body {
 @media (max-width: 380px) {
 	.portfolio-container__home-card {
 		margin-left: 10px;
+	}
+	.portfolio-header__name {
+		margin-left: 0px;
 	}
 
 	.portfolio-container__status {
