@@ -411,6 +411,21 @@ body {
 	.portfolio-container__certificats {
 		grid-template-columns: repeat(3, 200px);
 	}
+	.window-about__description {
+		font-size: 0.9rem;
+	}
+	.window-about__image-possum {
+		width: 100px;
+		height: 100px;
+	}
+	.window-about__description h1 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	.window-about__description h2 {
+		font-size: 0.9rem;
+		margin-bottom: 10px;
+	}
 	.js-home-card-certificats {
 		left: 10.5%;
 	}
