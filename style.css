@@ -390,11 +390,26 @@ body {
 	.portfolio-header__name {
 		margin-left: 80px;
 	}
+	.portfolio-container__title {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.portfolio-container__subtitle {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.portfolio-container__status {
+		font-size: 0.8rem;
+		text-align: center;
+	}
+	.portfolio-container__text {
+		font-size: 1.125rem;
+	}
 	.portfolio-container__photo {
-		width: 240px;
+		width: 200px;
 	}
 	.portfolio-container__certificats {
-		grid-template-columns: repeat(3, 240px);
+		grid-template-columns: repeat(3, 200px);
 	}
 	.js-home-card-certificats {
 		left: 10.5%;
