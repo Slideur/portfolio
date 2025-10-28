@@ -509,6 +509,12 @@ body {
 }
 
 @media (max-width: 1050px) {
+	.window-about {
+		max-width: 600px;
+	}
+	.portfolio-container__gallery {
+		max-width: 600px;
+	}
 	.portfolio-header__nav a {
 		margin-right: 20px;
 	}
