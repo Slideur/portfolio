@@ -11,7 +11,7 @@ body {
 	/* font-family: Roboto, sans-serif; */
 
 	background-size: 100vw 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 	color: #f1f1f1;
 }
 
@@ -182,7 +182,7 @@ body {
 	body {
 		background-size: initial;
 		background-position: center;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	.portfolio-header__nav {
 		justify-content: center;
@@ -252,7 +252,7 @@ body {
 	body {
 		background-size: initial;
 		background-position: center;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	.portfolio-header__nav {
 		justify-content: center;
@@ -325,7 +325,7 @@ body {
 	body {
 		background-size: initial;
 		background-position: center;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	.portfolio-header__nav {
 		justify-content: center;
@@ -360,13 +360,14 @@ body {
 		left: 7%;
 	}
 	.js-home-card-certificats {
-		left: 6%;
+		left: 7%;
 	}
 	.js-home-card-gallery {
 		left: 13.5%;
 	}
 	.portfolio-container__certificats {
 		grid-template-columns: 370px;
+		max-width: 400px;
 	}
 	.portfolio-container__photo {
 		width: 370px;
@@ -377,7 +378,7 @@ body {
 	body {
 		background-size: initial;
 		background-position: center;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	.portfolio-header__nav {
 		justify-content: center;
@@ -413,7 +414,7 @@ body {
 	body {
 		background-size: initial;
 		background-position: center;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	.portfolio-header__nav {
 		justify-content: center;
@@ -441,7 +442,7 @@ body {
 	body {
 		background-size: initial;
 		background-position: center;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	.portfolio-header__nav a {
 		margin-right: 50px;
@@ -456,6 +457,6 @@ body {
 	body {
 		background-size: initial;
 		background-position: center;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 }
