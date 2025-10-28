@@ -509,6 +509,11 @@ body {
 }
 
 @media (max-width: 1050px) {
+	body {
+		background-size: initial;
+		background-position: top center;
+		overflow-x: hidden;
+	}
 	.window-about {
 		max-width: 600px;
 	}
