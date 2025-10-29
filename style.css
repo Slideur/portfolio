@@ -9,7 +9,7 @@
 body {
 	background-image: url("./images/22001.jpg");
 	/* font-family: Roboto, sans-serif; */
-
+	overflow-x: hidden;
 	background-size: 100vw 100vh;
 	color: #f1f1f1;
 }
