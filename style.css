@@ -39,7 +39,7 @@ body {
 	font-family: Roboto, sans-serif;
 	margin-top: 100px;
 	position: relative;
-	transform: translateX(110%);
+	transform: translateX(100%);
 }
 .portfolio-container__title {
 	font-size: 3rem;
