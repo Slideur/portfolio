@@ -177,10 +177,13 @@ body {
 	border-radius: 5px;
 }
 
-@media (max-width: 1350px) {
-	body::-webkit-scrollbar {
-		display: none;
+@media (max-width: 1440px) {
+	body {
+		background-size: initial;
+		background-position: top center;
+		overflow-x: hidden;
 	}
+
 	.portfolio-header__nav a {
 		font-family: Roboto, sans-serif;
 		text-decoration: none;
