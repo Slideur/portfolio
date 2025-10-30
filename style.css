@@ -142,6 +142,10 @@
 	right: 5px;
 }
 
+.portfolio-container__home-card {
+	transform: translateX(-130%);
+}
+
 .js-home-card-about {
 	position: absolute;
 	max-width: 900px;
