@@ -327,9 +327,6 @@
 }
 
 @media (max-width: 430px) {
-	body::-webkit-scrollbar {
-		display: none;
-	}
 	.portfolio-header__name {
 		margin-left: 0px;
 	}
@@ -341,9 +338,18 @@
 }
 
 @media (max-width: 380px) {
-	/* .js-home-card-resume {
-		margin-left: 10px;
-	} */
+	.portfolio-container__home-card {
+		margin-left: 20px;
+	}
+	.portfolio-container__parcours {
+		margin-left: 15px;
+	}
+	.portfolio-container__gallery {
+		margin-left: 12px;
+	}
+	.portfolio-container__certificats {
+		margin-left: 16px;
+	}
 	.portfolio-header__name {
 		margin-left: 0px;
 	}
@@ -380,26 +386,26 @@
 }
 
 @media (max-width: 320px) {
-	body::-webkit-scrollbar {
-		display: none;
-	}
 	.portfolio-header__name {
 		margin-left: 0px;
 	}
 	.portfolio-container__home-card {
 		max-width: 280px;
-		margin-left: 10px;
+		margin-left: 30px;
 	}
 	.window-about {
 		max-width: 280px;
 	}
+	.portfolio-container__parcours {
+		margin-left: 30px;
+	}
 	.portfolio-container__gallery {
 		max-width: 280px;
-		margin-left: 17px;
+		margin-left: 30px;
 	}
 	.portfolio-container__certificats {
 		max-width: 280px;
-		margin-left: 17px;
+		margin-left: 30px;
 	}
 	.portfolio-container__photo {
 		width: 280px;
