@@ -9,6 +9,19 @@ const galleryDiv = document.querySelector(".js-home-card-gallery");
 const certificatsDiv = document.querySelector(".js-home-card-certificats");
 const contactDiv = document.querySelector(".js-home-card-contact");
 const container = document.querySelector(".portfolio-container");
+const main = document.querySelector(".portfolio-main");
+
+// document.addEventListener("keydown", (e) => {
+// 	if (e.altKey) {
+// 		main.style.overflowX = "hidden";
+// 	}
+// });
+
+// document.addEventListener("keyup", (e) => {
+// 	if (e.altKey) {
+// 		main.style.overflowX = "hidden";
+// 	}
+// });
 
 about.addEventListener("click", getSlidePage);
 function getSlidePage(e) {
@@ -18,43 +31,33 @@ function getSlidePage(e) {
 	resumeDiv.style.transform = "translateX(0)";
 	galleryDiv.style.transform = "translateX(0)";
 	certificatsDiv.style.transform = "translateX(0)";
-	contactDiv.style.transform = "translateX(0)";
 }
 resume.addEventListener("click", getSlidePage2);
 function getSlidePage2(e) {
 	e.preventDefault();
+
 	resumeDiv.style.transform = "translateX(-130%)";
 	galleryDiv.style.transform = "translateX(0)";
 	aboutDiv.style.transform = "translateX(0)";
 	certificatsDiv.style.transform = "translateX(0)";
-	contactDiv.style.transform = "translateX(0)";
 }
 gallery.addEventListener("click", getSlidePage3);
 function getSlidePage3(e) {
 	e.preventDefault();
+
 	galleryDiv.style.transform = "translateX(-130%)";
 	certificatsDiv.style.transform = "translateX(0)";
 	aboutDiv.style.transform = "translateX(0)";
 	resumeDiv.style.transform = "translateX(0)";
-	contactDiv.style.transform = "translateX(0)";
 }
 certificats.addEventListener("click", getSlidePage4);
 function getSlidePage4(e) {
 	e.preventDefault();
+
 	certificatsDiv.style.transform = "translateX(-130%)";
 	aboutDiv.style.transform = "translateX(0)";
 	resumeDiv.style.transform = "translateX(0)";
 	galleryDiv.style.transform = "translateX(0)";
-	contactDiv.style.transform = "translateX(0)";
-}
-contact.addEventListener("click", getSlidePage5);
-function getSlidePage5(e) {
-	e.preventDefault();
-	contactDiv.style.transform = "translateX(-130%)";
-	aboutDiv.style.transform = "translateX(0)";
-	resumeDiv.style.transform = "translateX(0)";
-	galleryDiv.style.transform = "translateX(0)";
-	certificatsDiv.style.transform = "translateX(0)";
 }
 
 const slideImages = document.querySelectorAll(".slide-image");
