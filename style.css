@@ -94,7 +94,7 @@
 .slider {
 	max-width: 600px;
 	height: 400px;
-	margin: 120px auto 0;
+	margin: 60px auto 0;
 	position: relative;
 	box-shadow: 0 0 15px rgba(241, 240, 240, 0.6);
 }
