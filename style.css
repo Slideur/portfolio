@@ -39,7 +39,7 @@ body {
 	font-family: Roboto, sans-serif;
 	margin-top: 100px;
 	position: relative;
-	transform: translateX(100%);
+	transform: translateX(110%);
 }
 .portfolio-container__title {
 	font-size: 3rem;
@@ -135,7 +135,6 @@ body {
 
 .js-home-card-about {
 	position: absolute;
-
 	max-width: 900px;
 	margin: 0 auto;
 	/* Position initiale à droite */
@@ -177,7 +176,7 @@ body {
 	border-radius: 5px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1350px) {
 	body {
 		background-size: initial;
 		background-position: top center;

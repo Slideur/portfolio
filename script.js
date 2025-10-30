@@ -8,10 +8,11 @@ const resumeDiv = document.querySelector(".js-home-card-resume");
 const galleryDiv = document.querySelector(".js-home-card-gallery");
 const certificatsDiv = document.querySelector(".js-home-card-certificats");
 const contactDiv = document.querySelector(".js-home-card-contact");
+const container = document.querySelector(".portfolio-container");
 
 about.addEventListener("click", getSlidePage);
 function getSlidePage(e) {
-	aboutDiv.style.transform = "translateX(-110%)";
+	aboutDiv.style.transform = "translateX(-120%)";
 	resumeDiv.style.transform = "translateX(0)";
 	galleryDiv.style.transform = "translateX(0)";
 	certificatsDiv.style.transform = "translateX(0)";
@@ -19,7 +20,7 @@ function getSlidePage(e) {
 }
 resume.addEventListener("click", getSlidePage2);
 function getSlidePage2(e) {
-	resumeDiv.style.transform = "translateX(-110%)";
+	resumeDiv.style.transform = "translateX(-120%)";
 	galleryDiv.style.transform = "translateX(0)";
 	aboutDiv.style.transform = "translateX(0)";
 	certificatsDiv.style.transform = "translateX(0)";
@@ -27,7 +28,7 @@ function getSlidePage2(e) {
 }
 gallery.addEventListener("click", getSlidePage3);
 function getSlidePage3(e) {
-	galleryDiv.style.transform = "translateX(-110%)";
+	galleryDiv.style.transform = "translateX(-120%)";
 	certificatsDiv.style.transform = "translateX(0)";
 	aboutDiv.style.transform = "translateX(0)";
 	resumeDiv.style.transform = "translateX(0)";
@@ -35,7 +36,7 @@ function getSlidePage3(e) {
 }
 certificats.addEventListener("click", getSlidePage4);
 function getSlidePage4(e) {
-	certificatsDiv.style.transform = "translateX(-110%)";
+	certificatsDiv.style.transform = "translateX(-120%)";
 	aboutDiv.style.transform = "translateX(0)";
 	resumeDiv.style.transform = "translateX(0)";
 	galleryDiv.style.transform = "translateX(0)";
@@ -43,7 +44,7 @@ function getSlidePage4(e) {
 }
 contact.addEventListener("click", getSlidePage5);
 function getSlidePage5(e) {
-	contactDiv.style.transform = "translateX(-110%)";
+	contactDiv.style.transform = "translateX(-120%)";
 	aboutDiv.style.transform = "translateX(0)";
 	resumeDiv.style.transform = "translateX(0)";
 	galleryDiv.style.transform = "translateX(0)";
