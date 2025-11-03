@@ -26,7 +26,6 @@ const main = document.querySelector(".portfolio-main");
 about.addEventListener("click", getSlidePage);
 function getSlidePage(e) {
 	e.preventDefault();
-
 	aboutDiv.style.transform = "translateX(-130%)";
 	resumeDiv.style.transform = "translateX(0)";
 	galleryDiv.style.transform = "translateX(0)";
