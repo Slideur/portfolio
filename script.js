@@ -10,6 +10,7 @@ const certificatsDiv = document.querySelector(".js-home-card-certificats");
 const contactDiv = document.querySelector(".js-home-card-contact");
 const container = document.querySelector(".portfolio-container");
 const main = document.querySelector(".portfolio-main");
+const slider = document.querySelector(".slider");
 
 // document.addEventListener("keydown", (e) => {
 // 	if (e.altKey) {
