@@ -17,7 +17,7 @@ function getSlidePage(e) {
 	e.preventDefault();
 	aboutDiv.style.transform = "translateX(-130%)";
 	resumeDiv.style.transform = "translateX(0)";
-	galleryDiv.style.transform = "translateX(-110%)";
+	galleryDiv.style.transform = "translateX(0)";
 	certificatsDiv.style.transform = "translateX(0)";
 }
 resume.addEventListener("click", getSlidePage2);
@@ -25,7 +25,7 @@ function getSlidePage2(e) {
 	e.preventDefault();
 
 	resumeDiv.style.transform = "translateX(-130%)";
-	galleryDiv.style.transform = "translateX(-110%)";
+	galleryDiv.style.transform = "translateX(0)";
 	aboutDiv.style.transform = "translateX(0)";
 	certificatsDiv.style.transform = "translateX(0)";
 }
@@ -33,7 +33,7 @@ gallery.addEventListener("click", getSlidePage3);
 function getSlidePage3(e) {
 	e.preventDefault();
 
-	galleryDiv.style.transform = "translateX(110%)";
+	galleryDiv.style.transform = "translateX(-130%)";
 	certificatsDiv.style.transform = "translateX(0)";
 	aboutDiv.style.transform = "translateX(0)";
 	resumeDiv.style.transform = "translateX(0)";
@@ -45,7 +45,7 @@ function getSlidePage4(e) {
 	certificatsDiv.style.transform = "translateX(-130%)";
 	aboutDiv.style.transform = "translateX(0)";
 	resumeDiv.style.transform = "translateX(0)";
-	galleryDiv.style.transform = "translateX(-110%)";
+	galleryDiv.style.transform = "translateX(0)";
 }
 
 const slideImages = document.querySelectorAll(".slide-image");
